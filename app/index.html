@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluster EKS & GitOps - AWS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-title">☸️ K8s <span>Cloud Lab</span></h1>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">Arquitetura</a>
+                    <a href="#status" class="nav-link">Live Status</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="hero-title">Orquestração Moderna com EKS e GitOps</h1>
+                <p class="hero-subtitle">Infraestrutura provisionada 100% como código na AWS com Terraform, operada por Kubernetes e com deploy contínuo automatizado via Argo CD.</p>
+                <div class="hero-buttons">
+                    <button class="btn primary" onclick="document.getElementById('status').scrollIntoView({behavior: 'smooth'})">Ver Status do Cluster</button>
+                    <button class="btn secondary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Entender Arquitetura</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>🎯 Pilares da Arquitetura</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>🏗️ Infraestrutura (Terraform)</h3>
+                        <p>Provisionamento automatizado e seguro de toda a rede VPC, Subnets e do cérebro do cluster EKS diretamente na nuvem da AWS.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🐳 Containers (ECR & Docker)</h3>
+                        <p>Aplicação empacotada em imagens imutáveis, versionadas através de esteiras CI (GitHub Actions) e armazenadas no cofre privado do Elastic Container Registry.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🐙 GitOps (Argo CD)</h3>
+                        <p>O repositório Git como única fonte da verdade. O Argo CD monitora o código e sincroniza automaticamente qualquer alteração direto para o Kubernetes.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📈 Autoscaling (HPA)</h3>
+                        <p>Escalabilidade horizontal inteligente baseada em métricas de CPU. O cluster monitora o tráfego e multiplica os Pods automaticamente durante picos de acesso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="status" class="section">
+            <div class="container">
+                <h2>📊 Live Status do Ambiente</h2>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span class="status-label">Cluster EKS:</span>
+                        <span class="status-value active">Online (Multi-AZ)</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Argo CD Sync:</span>
+                        <span class="status-value sync">Synced & Healthy</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Load Balancer:</span>
+                        <span class="status-value active">Tráfego Liberado</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">HPA (Métricas):</span>
+                        <span class="status-value active">Monitorando CPU</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 - Engenharia DevOps e Cloud Architecture</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

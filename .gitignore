@@ -1,0 +1,18 @@
+# Arquivos de estado e cache do Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+*.tfvars
+.terraform.lock.hcl
+
+# Chaves privadas e segredos locais
+*.pem
+*.ppk
+.env
+*.env
+
+# Arquivos do Sistema e IDE
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,5 @@
+replicaCount: 2
+
+image:
+  repository: <Conta_da_AWS>.dkr.ecr.us-east-1.amazonaws.com/projeto-aws-eks-repo
+  tag: "e12f9d8194860d5c0d85513b059d83a5a3807ccf"
